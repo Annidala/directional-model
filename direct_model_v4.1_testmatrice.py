@@ -211,7 +211,6 @@ cons = (
 	)
 
 p0=[pdrag[0],10]
-
 P_sc37=opt.minimize(err_matrice,p0,args=(stress_, strain_,u),method='SLSQP',bounds=bounds_matrix)
 coeff_sc37=P_sc37.x
 p=coeff_sc37
